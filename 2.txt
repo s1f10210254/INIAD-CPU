@@ -1,0 +1,287 @@
+0000 e000001c // LD24
+0004 10f4 // trap
+0006 7000 // NOP
+0008 fe00000d // BL24
+000c e00001ec // LD24
+0010 1ec0 // JL
+0012 7000 // NOP
+0014 e0000028 // LD24
+0018 10f4 // trap
+001a 10f0 // trap
+001c 53 // Byte data
+001d 74 // Byte data
+001e 61 // Byte data
+001f 72 // Byte data
+0020 74 // Byte data
+0021 20 // Byte data
+0022 74 // Byte data
+0023 65 // Byte data
+0024 73 // Byte data
+0025 74 // Byte data
+0026 2e // Byte data
+0027 00 // Byte data
+0028 45 // Byte data
+0029 6e // Byte data
+002a 64 // Byte data
+002b 20 // Byte data
+002c 6f // Byte data
+002d 66 // Byte data
+002e 20 // Byte data
+002f 74 // Byte data
+0030 68 // Byte data
+0031 65 // Byte data
+0032 20 // Byte data
+0033 74 // Byte data
+0034 65 // Byte data
+0035 73 // Byte data
+0036 74 // Byte data
+0037 2e // Byte data
+0038 00 // Byte data
+003c 6001 // LDI
+003e e1abcdef // LD24
+0042 e2f0f0f0 // LD24
+0046 e3a0c0e0 // LD24
+004a 02c1 // AND
+004c b2030002 // BEQ
+0050 10f2 // trap
+0052 10f6 // trap
+0054 6002 // LDI
+0056 e1abcdef // LD24
+005a e300c0e0 // LD24
+005e 82c1f0f0 // AND3
+0062 b2030003 // BEQ
+0066 10f2 // trap
+0068 10f6 // trap
+006a 7000 // NOP
+006c 6003 // LDI
+006e 6180 // LDI
+0070 6200 // LDI
+0072 6300 // LDI
+0074 0141 // CMP
+0076 8041ff81 // CMPI
+007a 7c02 // BC
+007c 10f2 // trap
+007e 10f6 // trap
+0080 6004 // LDI
+0082 61ff // LDI
+0084 6202 // LDI
+0086 6300 // LDI
+0088 0142 // CMP
+008a 0152 // CMPU
+008c 7d02 // BNC
+008e 10f2 // trap
+0090 10f6 // trap
+0092 7000 // NOP
+0094 6005 // LDI
+0096 61ff // LDI
+0098 6200 // LDI
+009a 6300 // LDI
+009c 0142 // CMP
+009e 8051fff0 // CMPUI
+00a2 fd000003 // BNC24
+00a6 10f2 // trap
+00a8 10f6 // trap
+00aa 7000 // NOP
+00ac 6006 // LDI
+00ae 610a // LDI
+00b0 6280 // LDI
+00b2 63f4 // LDI
+00b4 92010000 // DIV
+00b8 b2030002 // BEQ
+00bc 10f2 // trap
+00be 10f6 // trap
+00c0 6007 // LDI
+00c2 6123 // LDI
+00c4 92f00dac // LDI16
+00c8 6364 // LDI
+00ca 92110000 // DIVU
+00ce b2030003 // BEQ
+00d2 10f2 // trap
+00d4 10f6 // trap
+00d6 7000 // NOP
+00d8 6008 // LDI
+00da 61f8 // LDI
+00dc 6308 // LDI
+00de 0231 // NEG
+00e0 b2030002 // BEQ
+00e4 10f2 // trap
+00e6 10f6 // trap
+00e8 6009 // LDI
+00ea 91f0aaaa // LDI16
+00ee 93f05555 // LDI16
+00f2 02b1 // NOT
+00f4 b2030002 // BEQ
+00f8 10f2 // trap
+00fa 10f6 // trap
+00fc 600a // LDI
+00fe 610a // LDI
+0100 6280 // LDI
+0102 63f8 // LDI
+0104 92210000 // REM
+0108 b2030002 // BEQ
+010c 10f2 // trap
+010e 10f6 // trap
+0110 600b // LDI
+0112 6164 // LDI
+0114 92f00d80 // LDI16
+0118 6338 // LDI
+011a 92310000 // REMU
+011e b2030003 // BEQ
+0122 10f2 // trap
+0124 10f6 // trap
+0126 7000 // NOP
+0128 600c // LDI
+012a 6101 // LDI
+012c 62fc // LDI
+012e 63fe // LDI
+0130 1221 // SRA
+0132 b2030003 // BEQ
+0136 10f2 // trap
+0138 10f6 // trap
+013a 7000 // NOP
+013c 600d // LDI
+013e 91f0fedc // LDI16
+0142 93f0ffed // LDI16
+0146 92a10004 // SRA3
+014a b2030003 // BEQ
+014e 10f2 // trap
+0150 10f6 // trap
+0152 7000 // NOP
+0154 600e // LDI
+0156 6100 // LDI
+0158 92f0fedc // LDI16
+015c 93f0fffe // LDI16
+0160 5228 // SRAI
+0162 b2030003 // BEQ
+0166 10f2 // trap
+0168 10f6 // trap
+016a 7000 // NOP
+016c 600f // LDI
+016e 610c // LDI
+0170 d2c0fedc // SETH
+0174 82e2ba98 // OR3
+0178 e30fedcb // LD24
+017c 1201 // SRL
+017e b2030003 // BEQ
+0182 10f2 // trap
+0184 10f6 // trap
+0186 7000 // NOP
+0188 6010 // LDI
+018a d1c0fedc // SETH
+018e 81e1ba98 // OR3
+0192 e300fedc // LD24
+0196 92810010 // SRL3
+019a b2030003 // BEQ
+019e 10f2 // trap
+01a0 10f6 // trap
+01a2 7000 // NOP
+01a4 6011 // LDI
+01a6 610a // LDI
+01a8 6208 // LDI
+01aa 63fe // LDI
+01ac 0221 // SUB
+01ae b2030003 // BEQ
+01b2 10f2 // trap
+01b4 10f6 // trap
+01b6 7000 // NOP
+01b8 6012 // LDI
+01ba e10b0d0f // LD24
+01be e2abcdef // LD24
+01c2 e3a0c0e0 // LD24
+01c6 02d1 // XOR
+01c8 b2030002 // BEQ
+01cc 10f2 // trap
+01ce 10f6 // trap
+01d0 6013 // LDI
+01d2 e1abcdef // LD24
+01d6 e3ab00ef // LD24
+01da 82d1cd00 // XOR3
+01de b2030003 // BEQ
+01e2 10f2 // trap
+01e4 10f6 // trap
+01e6 7000 // NOP
+01e8 1fce // JMP
+01ea 7000 // NOP
+01ec 6014 // LDI
+01ee d1c00000 // SETH
+01f2 81e1022c // OR3
+01f6 d2c05555 // SETH
+01fa 82e25555 // OR3
+01fe d3c0aaaa // SETH
+0202 83e3aaaa // OR3
+0206 2271 // ST_DEC
+0208 2361 // ST_INC
+020a 41fc // ADDI
+020c 24e1 // LD_INC
+020e 25e1 // LD_INC
+0210 41fc // ADDI
+0212 b4120004 // BNE
+0216 0523 // SUB
+0218 b0950002 // BNEZ
+021c ff000005 // BRA24
+0220 10f2 // trap
+0222 10f6 // trap
+0224 ff000003 // BRA24
+0230 6015 // LDI
+0232 6212 // LDI
+0234 a201fffc // STBR
+0238 e300cdef // LD24
+023c a321fffe // STHR
+0240 2321 // STH
+0242 a281fffd // LDBR
+0246 e3000055 // LD24
+024a b2030003 // BEQ
+024e 10f2 // trap
+0250 10f6 // trap
+0252 7000 // NOP
+0254 6016 // LDI
+0256 93f0cdef // LDI16
+025a 22a1 // LDH
+025c b2030002 // BEQ
+0260 10f2 // trap
+0262 10f6 // trap
+0264 6017 // LDI
+0266 93f0aaaa // LDI16
+026a a2a10002 // LDHR
+026e b2030003 // BEQ
+0272 10f2 // trap
+0274 10f6 // trap
+0276 7000 // NOP
+0278 6018 // LDI
+027a 93f000cd // LDI16
+027e 2291 // LDUB
+0280 b2030002 // BEQ
+0284 10f2 // trap
+0286 10f6 // trap
+0288 6019 // LDI
+028a 93f000ef // LDI16
+028e a2910001 // LDUBR
+0292 b2030003 // BEQ
+0296 10f2 // trap
+0298 10f6 // trap
+029a 7000 // NOP
+029c 601a // LDI
+029e e300cdef // LD24
+02a2 22b1 // LDUH
+02a4 b2030002 // BEQ
+02a8 10f2 // trap
+02aa 10f6 // trap
+02ac 601b // LDI
+02ae e300aaaa // LD24
+02b2 a2b10002 // LDUHR
+02b6 b2030003 // BEQ
+02ba 10f2 // trap
+02bc 10f6 // trap
+02be 7000 // NOP
+02c0 601c // LDI
+02c2 0121 // SUB
+02c4 b0b10002 // BGEZ
+02c8 10f2 // trap
+02ca 10f6 // trap
+02cc 601d // LDI
+02ce 617f // LDI
+02d0 b0b10002 // BGEZ
+02d4 10f2 // trap
+02d6 10f6 // trap
+02d8 601e // LDI
+02da 1fce // JMP
